@@ -189,50 +189,6 @@ const Dashboard = () => {
   </div>
 );
 
-  // Renderiza instrucciones para cada sección (puedes reemplazar por componentes reales)
-  const renderSeccion = () => {
-    switch (seccion) {
-      case "busqueda":
-        return (
-          <div className="bg-gray-800 rounded-xl shadow p-6 mt-6">
-            <h3 className="text-xl font-bold text-blue-400 mb-4">Subir lugar de búsqueda y datos encontrados</h3>
-            <p className="text-gray-300 mb-2">Aquí podrás registrar un nuevo lugar de búsqueda, subir imágenes y detallar los hallazgos.</p>
-            {/* Aquí iría el formulario real */}
-            <button className="mt-4 bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded" onClick={() => setSeccion(null)}>Volver</button>
-          </div>
-        );
-      case "persona":
-        return (
-          <div className="bg-gray-800 rounded-xl shadow p-6 mt-6">
-            <h3 className="text-xl font-bold text-blue-400 mb-4">Subir persona desaparecida o no localizada</h3>
-            <p className="text-gray-300 mb-2">Completa los datos de la persona y sube una foto clara.</p>
-            {/* Aquí iría el formulario real */}
-            <button className="mt-4 bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded" onClick={() => setSeccion(null)}>Volver</button>
-          </div>
-        );
-      case "coincidencias":
-        return (
-          <div className="bg-gray-800 rounded-xl shadow p-6 mt-6">
-            <h3 className="text-xl font-bold text-blue-400 mb-4">Buscar coincidencias</h3>
-            <p className="text-gray-300 mb-2">Sube una imagen o datos para buscar coincidencias (simulado).</p>
-            {/* Aquí iría el formulario real */}
-            <button className="mt-4 bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded" onClick={() => setSeccion(null)}>Volver</button>
-          </div>
-        );
-      case "localizada":
-        return (
-          <div className="bg-gray-800 rounded-xl shadow p-6 mt-6">
-            <h3 className="text-xl font-bold text-blue-400 mb-4">Persona localizada</h3>
-            <p className="text-gray-300 mb-2">Busca por ID y elimina registros de personas localizadas.</p>
-            {/* Aquí iría el formulario real */}
-            <button className="mt-4 bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded" onClick={() => setSeccion(null)}>Volver</button>
-          </div>
-        );
-      default:
-        return null;
-    }
-  };
-
   return (
     <div>
       <Navbar />
